@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><FUNCTIONAL_DATA>
+    <RPT_FUNCTIONAL_DATA linkid="N65537">
+        <STEP_RESULTS>
+            <STATUS name="passed" label="Pass" value="0"/>
+            <STATUS name="failed" label="Fail" value="0"/>
+            <STATUS name="inconclusive" label="Inconclusive" value="0"/>
+            <STATUS name="error" label="Error" value="0"/>
+        </STEP_RESULTS>
+        <TEST_RESULTS>
+            <STATUS name="error" label="Error" value="0"/>
+            <STATUS name="failed" label="Fail" value="0"/>
+            <STATUS name="inconclusive" label="Inconclusive" value="0"/>
+            <STATUS name="passed" label="Pass" value="0"/>
+        </TEST_RESULTS>
+        <VP_RESULTS>
+            <STATUS name="passed" label="Pass" value="0"/>
+            <STATUS name="failed" label="Fail" value="0"/>
+            <STATUS name="inconclusive" label="Inconclusive" value="0"/>
+            <STATUS name="error" label="Error" value="0"/>
+        </VP_RESULTS>
+    </RPT_FUNCTIONAL_DATA>
+</FUNCTIONAL_DATA>

@@ -1,0 +1,73 @@
+name: JavaApp
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /JavaApp
+        type: javaClasspath
+  - name: .project
+  - name: Script1.java
+  - name: Script1.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.1.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EEF36DBB02ECE0F5A7E56263666438
+    dependencies: 
+      - path: /JavaApp/.classpath
+        type: FtScriptDependants
+      - path: /JavaApp/.project
+        type: FtScriptDependants
+      - path: /JavaApp/Script1.java
+        type: FtScriptDependants
+      - path: /JavaApp/Script1.testsuite
+        type: FtScriptDependants
+      - path: /JavaApp/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+      - path: /JavaApp/resources/Script1.rftdef
+        type: FtScriptDependants
+      - path: /JavaApp/resources/Script1.rftxmap
+        type: FtScriptDependants
+      - path: /JavaApp/resources/Script1Helper.java
+        type: FtScriptDependants
+  - name: Script2.java
+  - name: Script2.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.1.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EEF36DDA909F80F5A7E56263666438
+    dependencies: 
+      - path: /JavaApp/.classpath
+        type: FtScriptDependants
+      - path: /JavaApp/.project
+        type: FtScriptDependants
+      - path: /JavaApp/Script2.java
+        type: FtScriptDependants
+      - path: /JavaApp/Script2.testsuite
+        type: FtScriptDependants
+      - path: /JavaApp/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+      - path: /JavaApp/resources/Script2.rftdef
+        type: FtScriptDependants
+      - path: /JavaApp/resources/Script2.rftxmap
+        type: FtScriptDependants
+      - path: /JavaApp/resources/Script2Helper.java
+        type: FtScriptDependants
+  - name: aftSuite_1712340467722.htm
+    type: com.ibm.rational.test.lt.html
+  - name: aftSuite_1712340787442.htm
+    type: com.ibm.rational.test.lt.html
+  - name: resources
+    resources: 
+      - name: DatastoreDefinition.rftdsd
+      - name: Script1.rftdef
+      - name: Script1.rftxmap
+      - name: Script1Helper.java
+      - name: Script2.rftdef
+      - name: Script2.rftxmap
+      - name: Script2Helper.java

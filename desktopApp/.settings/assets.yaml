@@ -1,0 +1,453 @@
+name: desktopApp
+version: 2
+projectReferences: 
+  - /JavaApp
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /desktopApp/src
+        type: javaClasspath
+  - name: 'Calc UWP.recdata'
+  - name: 'Calc UWP.recsession'
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: '/desktopApp/Calc UWP.recdata'
+        type: recsessionRecdata
+  - name: 'Calc UWP.testsuite'
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.1.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EEF358229EAD00F5A7E56263666438
+    dependencies: 
+      - path: '/desktopApp/Calc UWP.recsession'
+        type: testRecsession
+      - path: /desktopApp/_Calc_(UWP)_94d.ma
+        type: test#moeb.applicationPackage
+  - name: 'Calc UWP_1712327076898.stats'
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712327076898
+      tags: 
+      testId: A1EEF358229EAD00F5A7E56263666438
+      testName: 'Calc UWP'
+    dependencies: 
+      - path: '/desktopApp/Calc UWP.testsuite'
+        type: statsSessionTest
+      - path: '/desktopApp/Calc UWP_1712327076898.xmoebreport'
+        type: statsSessionAsset
+      - path: '/desktopApp/Calc UWP_1712327076898_orch!system.mstats'
+        type: statsSessionStore
+      - path: '/desktopApp/Calc UWP_1712327076898_orch!system.rstats'
+        type: statsSessionStore
+      - path: '/desktopApp/Calc UWP_1712327076898_perf!localhost.mstats'
+        type: statsSessionStore
+      - path: '/desktopApp/Calc UWP_1712327076898_perf!localhost.rstats'
+        type: statsSessionStore
+      - path: '/desktopApp/Calc UWP_1712327077013.executiondlr'
+        type: statsSessionAsset
+  - name: 'Calc UWP_1712327076898.xmoebreport'
+  - name: 'Calc UWP_1712327076898_orch!system.mstats'
+  - name: 'Calc UWP_1712327076898_orch!system.rstats'
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: 'Calc UWP_1712327076898_perf!localhost.mstats'
+  - name: 'Calc UWP_1712327076898_perf!localhost.rstats'
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: 'Calc UWP_1712327077013.executiondlr'
+  - name: 'Calc UWP_1712332706798.stats'
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712332706798
+      tags: 
+      testId: A1EEF358229EAD00F5A7E56263666438
+      testName: 'Calc UWP'
+    dependencies: 
+      - path: '/desktopApp/Calc UWP.testsuite'
+        type: statsSessionTest
+      - path: '/desktopApp/Calc UWP_1712332706798.xmoebreport'
+        type: statsSessionAsset
+      - path: '/desktopApp/Calc UWP_1712332706798_orch!system.mstats'
+        type: statsSessionStore
+      - path: '/desktopApp/Calc UWP_1712332706798_orch!system.rstats'
+        type: statsSessionStore
+      - path: '/desktopApp/Calc UWP_1712332706798_perf!localhost.mstats'
+        type: statsSessionStore
+      - path: '/desktopApp/Calc UWP_1712332706798_perf!localhost.rstats'
+        type: statsSessionStore
+      - path: '/desktopApp/Calc UWP_1712332712128.executiondlr'
+        type: statsSessionAsset
+  - name: 'Calc UWP_1712332706798.xmoebreport'
+  - name: 'Calc UWP_1712332706798_orch!system.mstats'
+  - name: 'Calc UWP_1712332706798_orch!system.rstats'
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: 'Calc UWP_1712332706798_perf!localhost.mstats'
+  - name: 'Calc UWP_1712332706798_perf!localhost.rstats'
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: 'Calc UWP_1712332712128.executiondlr'
+  - name: Calc.recdata
+  - name: Calc.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /desktopApp/Calc.recdata
+        type: recsessionRecdata
+  - name: DistributedTests1_1712337979624.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712337979624
+      tags: 
+      testId: A1EEF3719CEF0C30F5A7E56263666438
+      testName: DistributedTests1
+    dependencies: 
+      - path: /desktopApp/DistributedTests1_1712337979624.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/DistributedTests1_1712337979624_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/DistributedTests1_1712337979624_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/DistributedTests1_1712337979624_perf!LP4-EU-51627856.PROD.HCLPNP.COM.mstats
+        type: statsSessionStore
+      - path: /desktopApp/DistributedTests1_1712337979624_perf!LP4-EU-51627856.PROD.HCLPNP.COM.rstats
+        type: statsSessionStore
+      - path: /desktopApp/DistributedTests1_1712337986563.executiondlr
+        type: statsSessionAsset
+  - name: DistributedTests1_1712337979624.xmoebreport
+  - name: DistributedTests1_1712337979624_orch!system.mstats
+  - name: DistributedTests1_1712337979624_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DistributedTests1_1712337979624_perf!LP4-EU-51627856.PROD.HCLPNP.COM.mstats
+  - name: DistributedTests1_1712337979624_perf!LP4-EU-51627856.PROD.HCLPNP.COM.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DistributedTests1_1712337986563.executiondlr
+  - name: 'Notepad UWP.recdata'
+  - name: 'Notepad UWP.recsession'
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: '/desktopApp/Notepad UWP.recdata'
+        type: recsessionRecdata
+  - name: _Calc_(UWP)_94d.ma
+    type: moeb.applicationPackage
+  - name: aftSuite.xml
+    type: com.ibm.rational.test.ft.aftsuite
+    version: 11.0.1.0
+    dependencies: 
+      - path: /JavaApp/Script2.testsuite
+        type: aftsuite
+      - path: /desktopApp/dft/10.1.1.1.location
+        type: scheduleLocation
+  - name: aftSuite_1712338731100.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712338731100
+      tags: 
+      testId: N95D31E006BC11EDAE94F9990CE47D0F
+      testName: aftSuite
+    dependencies: 
+      - path: /desktopApp/aftSuite_1712338731100.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/aftSuite_1712338731100_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712338731100_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712338731100_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712338731100_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712338737907.executiondlr
+        type: statsSessionAsset
+  - name: aftSuite_1712338731100.xmoebreport
+  - name: aftSuite_1712338731100_orch!system.mstats
+  - name: aftSuite_1712338731100_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712338731100_perf!localhost.mstats
+  - name: aftSuite_1712338731100_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712338737907.executiondlr
+  - name: aftSuite_1712339024151.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712339024151
+      tags: 
+      testId: N95D31E006BC11EDAE94F9990CE47D0F
+      testName: aftSuite
+    dependencies: 
+      - path: /desktopApp/aftSuite_1712339024151.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/aftSuite_1712339024151_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712339024151_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712339024151_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712339024151_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712339030985.executiondlr
+        type: statsSessionAsset
+  - name: aftSuite_1712339024151.xmoebreport
+  - name: aftSuite_1712339024151_orch!system.mstats
+  - name: aftSuite_1712339024151_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712339024151_perf!localhost.mstats
+  - name: aftSuite_1712339024151_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712339030985.executiondlr
+  - name: aftSuite_1712339655790.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712339655790
+      tags: 
+      testId: N95D31E006BC11EDAE94F9990CE47D0F
+      testName: aftSuite
+    dependencies: 
+      - path: /desktopApp/aftSuite_1712339655790.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/aftSuite_1712339655790_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712339655790_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712339655790_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712339655790_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712339663319.executiondlr
+        type: statsSessionAsset
+  - name: aftSuite_1712339655790.xmoebreport
+  - name: aftSuite_1712339655790_orch!system.mstats
+  - name: aftSuite_1712339655790_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712339655790_perf!localhost.mstats
+  - name: aftSuite_1712339655790_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712339663319.executiondlr
+  - name: aftSuite_1712340459992.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712340459992
+      tags: 
+      testId: N95D31E006BC11EDAE94F9990CE47D0F
+      testName: aftSuite
+    dependencies: 
+      - path: /desktopApp/aftSuite_1712340459992.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/aftSuite_1712340459992_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712340459992_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712340459992_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712340459992_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712340467722.executiondlr
+        type: statsSessionAsset
+  - name: aftSuite_1712340459992.xmoebreport
+  - name: aftSuite_1712340459992_orch!system.mstats
+  - name: aftSuite_1712340459992_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712340459992_perf!localhost.mstats
+  - name: aftSuite_1712340459992_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712340467722.executiondlr
+  - name: aftSuite_1712340779757.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712340779757
+      tags: 
+      testId: N95D31E006BC11EDAE94F9990CE47D0F
+      testName: aftSuite
+    dependencies: 
+      - path: /desktopApp/aftSuite_1712340779757.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/aftSuite_1712340779757_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712340779757_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712340779757_perf!10.1.1.1.mstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712340779757_perf!10.1.1.1.rstats
+        type: statsSessionStore
+      - path: /desktopApp/aftSuite_1712340787442.executiondlr
+        type: statsSessionAsset
+  - name: aftSuite_1712340779757.xmoebreport
+  - name: aftSuite_1712340779757_orch!system.mstats
+  - name: aftSuite_1712340779757_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712340779757_perf!10.1.1.1.mstats
+  - name: aftSuite_1712340779757_perf!10.1.1.1.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: aftSuite_1712340787442.executiondlr
+  - name: compound.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 11.0.1.0
+    properties: 
+      description: 'Test(s): 
+
+	webui
+
+'
+      name: compound
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EEF36E016E9300F5A7E56263666438
+    dependencies: 
+      - path: /desktopApp/webui.testsuite
+        type: scheduleInvokedTest
+  - name: compound_1712336454435.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712336454435
+      tags: 
+      testId: A1EEF36E016E9300F5A7E56263666438
+      testName: compound
+    dependencies: 
+      - path: /desktopApp/compound.testsuite
+        type: statsSessionTest
+      - path: /desktopApp/compound_1712336454435.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/compound_1712336454435_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/compound_1712336454435_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/compound_1712336454435_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /desktopApp/compound_1712336454435_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /desktopApp/compound_1712336459616.executiondlr
+        type: statsSessionAsset
+  - name: compound_1712336454435.xmoebreport
+  - name: compound_1712336454435_orch!system.mstats
+  - name: compound_1712336454435_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: compound_1712336454435_perf!localhost.mstats
+  - name: compound_1712336454435_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: compound_1712336459616.executiondlr
+  - name: compound_1712336597409.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712336597409
+      tags: 
+      testId: A1EEF36E016E9300F5A7E56263666438
+      testName: compound
+    dependencies: 
+      - path: /desktopApp/compound.testsuite
+        type: statsSessionTest
+      - path: /desktopApp/compound_1712336597409.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/compound_1712336597409_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/compound_1712336597409_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/compound_1712336597409_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /desktopApp/compound_1712336597409_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /desktopApp/compound_1712336603014.executiondlr
+        type: statsSessionAsset
+  - name: compound_1712336597409.xmoebreport
+  - name: compound_1712336597409_orch!system.mstats
+  - name: compound_1712336597409_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: compound_1712336597409_perf!localhost.mstats
+  - name: compound_1712336597409_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: compound_1712336603014.executiondlr
+  - name: dft
+    resources: 
+      - name: 10.1.1.1.location
+        type: com.ibm.rational.test.lt.location
+      - name: DistributedTests1.testsuite
+        missing: true
+      - name: LP4-EU-51627856.PROD.HCLPNP.COM.location
+        type: com.ibm.rational.test.lt.location
+      - name: aftSuite.testsuite
+        missing: true
+  - name: n_notepad___fd7.ma
+    type: moeb.applicationPackage
+  - name: notepad++.recdata
+  - name: notepad++.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /desktopApp/notepad++.recdata
+        type: recsessionRecdata
+  - name: notepad++.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.1.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EEF355A498EF80F5A7E56263666438
+    dependencies: 
+      - path: /desktopApp/n_notepad___fd7.ma
+        type: test#moeb.applicationPackage
+      - path: /desktopApp/notepad++.recsession
+        type: testRecsession
+  - name: notepad++_1712326007222.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1712326007222
+      tags: 
+      testId: A1EEF355A498EF80F5A7E56263666438
+      testName: notepad++
+    dependencies: 
+      - path: /desktopApp/notepad++.testsuite
+        type: statsSessionTest
+      - path: /desktopApp/notepad++_1712326007222.xmoebreport
+        type: statsSessionAsset
+      - path: /desktopApp/notepad++_1712326007222_orch!system.mstats
+        type: statsSessionStore
+      - path: /desktopApp/notepad++_1712326007222_orch!system.rstats
+        type: statsSessionStore
+      - path: /desktopApp/notepad++_1712326007222_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /desktopApp/notepad++_1712326007222_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /desktopApp/notepad++_1712326007530.executiondlr
+        type: statsSessionAsset
+  - name: notepad++_1712326007222.xmoebreport
+  - name: notepad++_1712326007222_orch!system.mstats
+  - name: notepad++_1712326007222_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: notepad++_1712326007222_perf!localhost.mstats
+  - name: notepad++_1712326007222_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: notepad++_1712326007530.executiondlr
+  - name: spotify.recdata
+  - name: spotify.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /desktopApp/spotify.recdata
+        type: recsessionRecdata
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: Calc_UWP_Test_A1EEF358229EAD00F5A7E56263666438.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Compound_CompoundTestInSchedule_A1EEF36E016E9300F5A7E56263666438.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Compound_CompoundTest_A1EEF36E016E9300F5A7E56263666438.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Test_A1EEF355A498EF80F5A7E56263666438.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Webui_Test_A1EEF36EF86D9F70F5A7E56263666438.java
+            type: com.ibm.rational.test.lt.generatedCode
+  - name: w_bbc_co_uk_227.ma
+    type: moeb.applicationPackage
+  - name: webui.recdata
+  - name: webui.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /desktopApp/webui.recdata
+        type: recsessionRecdata
+  - name: webui.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.1.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EEF36EF86D9F70F5A7E56263666438
+    dependencies: 
+      - path: /desktopApp/w_bbc_co_uk_227.ma
+        type: test#moeb.applicationPackage
+      - path: /desktopApp/webui.recsession
+        type: testRecsession

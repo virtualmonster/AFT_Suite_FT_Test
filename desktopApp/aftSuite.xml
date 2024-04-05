@@ -1,0 +1,13 @@
+<inits id="N95D31E006BC11EDAE94F9990CE47D0F" type="com.ibm.rational.test.ft.aftsuite">
+<group>
+<tests>
+<test path="/JavaApp/Script2.testsuite"/>
+</tests>
+<browsers>
+<browser name="chrome" headless="false" private="false"/>
+</browsers>
+<locations>
+<location host="10.1.1.1"/>
+</locations>
+</group>
+</inits>

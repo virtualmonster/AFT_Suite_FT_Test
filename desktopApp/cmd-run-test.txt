@@ -1,0 +1,7 @@
+eclipsehome=C:\Program Files\HCL\DevOpsTest
+plugins=C:\Program Files\HCL\HCLIMShared\plugins
+workspace=C:\Users\stuart.walker\HCL\devopstest\workspace
+project=desktopApp
+suite=notepad++.testsuite
+exportlogmillis=false
+overwrite=false
