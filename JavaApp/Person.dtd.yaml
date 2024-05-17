@@ -1,2 +1,2 @@
-connection: ""
-statement: ""
+connection: "Oracle DB"
+statement: "SELECT \"ID\",\"USERNAME\" FROM \"PERSON\""
