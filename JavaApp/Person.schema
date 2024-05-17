@@ -1,1 +1,1 @@
-{"schemaId":null,"schemaName":"Person","description":null,"filePath":"JavaApp/Person.schema","constraints":[],"databaseConnection":"Oracle DB","entities":[]}
+{"schemaId":"d6dee3c7-2b03-4def-9ee3-c72b038def70","schemaName":"Person","description":null,"filePath":"JavaApp/Person.schema","constraints":[],"databaseConnection":"Oracle DB","entities":[{"referencedDataDefinition":"","inlineDataDefinition":{"name":"PERSON","description":"","fields":[{"name":"ID"},{"name":"USERNAME"}]}}]}
